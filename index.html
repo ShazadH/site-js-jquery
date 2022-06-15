@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/js/jquery/jquery-ui.css" />
+        <!-- CSS only -->
+        <!-- <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous"
+        /> -->
+        <!-- inclusion google material icon -->
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <!-- inclusion css simple-slider -->
+        <link
+            rel="stylesheet"
+            href="./assets/css/components/simple-slider/simple-slider.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/app.css" />
+        <title>Base Project</title>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <div class="main-slider"></div>
+                <div class="title">
+                    <h1>Bienvenue à bord</h1>
+                    <p>Location de voiure 24h/24 et 7j/7</p>
+                </div>
+                <div class="main-filter">
+                    <div class="filter-container">
+                        <select name="address" id="address">
+                            <option value="audi">Adresse de départ</option>
+                            <option value="volvo">Paris</option>
+                            <option value="saab">Londre</option>
+                            <option value="opel">Rome</option>
+                        </select>
+
+                        <div class="picker-from">
+                            <input type="text" id="from" />
+                            <span class="material-icons triggerIcon">
+                                date_range
+                            </span>
+                        </div>
+                        <div class="picker-to">
+                            <input type="text" id="to" />
+                            <span class="material-icons triggerIcon">
+                                date_range
+                            </span>
+                        </div>
+                    </div>
+
+                    <button>Valider ma recherche</button>
+                </div>
+                <!-- <div id="slider"></div> -->
+            </header>
+            <main>
+                <div class="research-fliter">
+                    <p><span class="bold">7</span> résultats</p>
+                    <form action="/">
+                        <select name="Prix croissant" id="address">
+                            <option value="volvo">Prix croissant</option>
+                            <option value="saab">Londre</option>
+                            <option value="opel">Rome</option>
+                            <option value="audi">Berlin</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="items-list">
+                    <div class="item">
+                        <!-- <img src="./assets/img/vehicule1.png" alt="" /> -->
+                        <div class="img-first-item"></div>
+                        <div class="item-info">
+                            <h2>Peugeot 208</h2>
+                            <p>
+                                Diesel 5 portes, GPS, AutoRadio, Forfait 1000km
+                                (0.5/km supplémentaires).
+                            </p>
+                            <p>999€ - Agence de Paris</p>
+                            <button>Réserver et Payer</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <!-- <img src="./assets/img/vehicule2.png" alt="" /> -->
+                        <div class="img-second-item"></div>
+
+                        <div class="item-info">
+                            <h2>Peugeot 208</h2>
+                            <p>
+                                Diesel 5 portes, GPS, AutoRadio, Forfait 1000km
+                                (0.5/km supplémentaires).
+                            </p>
+                            <p>999€ - Agence de Paris</p>
+                            <button>Réserver et Payer</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-third-item"></div>
+
+                        <div class="item-info">
+                            <h2>Peugeot 208</h2>
+                            <p>
+                                Diesel 5 portes, GPS, AutoRadio, Forfait 1000km
+                                (0.5/km supplémentaires).
+                            </p>
+                            <p>999€ - Agence de Paris</p>
+                            <button>Réserver et Payer</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-fourth-item"></div>
+
+                        <div class="item-info">
+                            <h2>Peugeot 208</h2>
+                            <p>
+                                Diesel 5 portes, GPS, AutoRadio, Forfait 1000km
+                                (0.5/km supplémentaires).
+                            </p>
+                            <p>999€ - Agence de Paris</p>
+                            <button>Réserver et Payer</button>
+                        </div>
+                    </div>
+                </div>
+                <div C="slider"></div>
+            </main>
+            <footer>
+                <img src="./assets/img/agence.jpg" alt="" />
+                <div class="society-info">
+                    <h3>Notre agence de Paris</h3>
+                    <p>300 boulevar de Vaugirard, 75015, Paris</p>
+                    <p>Ouvert 7j/7 de 09h à 13h et de 14h à 20h</p>
+                    <p>01 49 78 21 33</p>
+                    <p>contact@vtc.com</p>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Add CDN -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <!-- Add JS localy if CDN doesn't work -->
+        <script>
+            window.jQuery ||
+                document.write(
+                    "<script src='./assets/js/jquery/jquery-3.6.0.min.js'><\/script>"
+                );
+        </script>
+
+        <script
+            src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+            integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY="
+            crossorigin="anonymous"
+        ></script>
+        <!-- JavaScript Bundle with Popper -->
+        <!-- <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"
+        ></script> -->
+
+        <!-- inclusion de simple slider -->
+        <script src="./assets/js/simple-slider/simple-slider.min.js"></script>
+
+        <script src="./assets/js/app.js"></script>
+    </body>
+</html>

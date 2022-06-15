@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+/* Conponents */
+@import url("./components/header/header.css");
+
+/*Styles globaux*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#container {
+    /* width: 1400px; */
+    margin: auto;
+}
+
+header {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 1920px;
+    height: 700px;
+    /* min-height: 50vh; */
+    /* background-size: 100%;
+    background-repeat: no-repeat; */
+    color: white;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+/* .main-slider {
+    height: 100%;
+} */
+
+.main-slider {
+    margin: 0;
+    padding: 0;
+    height: 700px !important;
+    z-index: 1;
+
+    /* width: 1920px; */
+    /* background-image: url(../img/background.jpg); */
+    /* min-height: 50vh; */
+}
+
+header .title {
+    position: absolute;
+    text-align: center;
+    z-index: 10;
+    top: 3rem;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+.main-filter {
+    display: flex;
+    padding: 1rem;
+    opacity: 0.9;
+    width: 70%;
+    z-index: 10;
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    /* justify-content: space-between; */
+}
+
+.main-filter .filter-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightslategray;
+    padding: 0.5rem 2rem;
+}
+
+select,
+.picker-from,
+.picker-to {
+    width: 25%;
+}
+
+.picker-from,
+.picker-to {
+    width: 25%;
+}
+
+.main-filter button {
+    width: 20%;
+    color: white;
+    background-color: #54b452;
+    font-size: 1rem;
+    border: none;
+}
+
+main {
+    width: 1200px;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+main .research-fliter {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .research-fliter select {
+    width: 7rem;
+}
+
+main .research-fliter .bold {
+    font-weight: bold;
+}
+
+.items-list .item {
+    display: flex;
+    border-bottom: 1px lightgray solid;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+}
+
+.img-first-item,
+.img-second-item,
+.img-third-item,
+.img-fourth-item {
+    width: 350px !important;
+    height: 200px !important;
+    margin: 0;
+}
+
+.items-list .item .item-info {
+    margin-left: 4rem;
+    padding: 1.5rem 2rem;
+}
+
+.item-info h2 {
+    font-size: 1.2rem;
+}
+
+.item-info p {
+    margin-bottom: 0.5rem;
+}
+
+.item-info button {
+    background-color: #54b452;
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0rem;
+}
+
+footer img {
+    width: 150px;
+    height: 100px;
+}
+
+footer .society-info {
+    margin-left: 2rem;
+}

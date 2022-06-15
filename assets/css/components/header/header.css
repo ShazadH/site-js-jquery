@@ -1,0 +1,15 @@
+.header-container {
+    margin: 0;
+    padding: 0;
+    background: var(--main-bkg);
+    width: 100%;
+}
+
+.contenu1 {
+    margin: 0;
+    padding: 0;
+}
+
+.contenu1 h1 {
+    text-align: center;
+}
