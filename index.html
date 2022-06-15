@@ -28,6 +28,31 @@
     <body>
         <div id="container">
             <header>
+                <ul class="menu">
+                    <li><a class="menuItem" href="#">Louer une voiture</a></li>
+                    <li>
+                        <a class="menuItem" href="#">Louer un utilitaire</a>
+                    </li>
+                    <li>
+                        <a class="menuItem" href="#">Réserver un chauffeur</a>
+                    </li>
+                    <li>
+                        <a class="menuItem" href="#">Découvrez nos agences</a>
+                        <a class="menuItem" href="#">Mon compte</a>
+                    </li>
+                    <li>
+                        <a class="menuItem" href="#">Mon compte</a>
+                    </li>
+                    <li>
+                        <a class="menuItem" href="#">Contact</a>
+                    </li>
+                </ul>
+                <button class="hamburger">
+                    <!-- material icons https://material.io/resources/icons/ -->
+                    <i class="menuIcon material-icons">menu</i>
+                    <i class="closeIcon material-icons">close</i>
+                </button>
+
                 <div class="main-slider"></div>
                 <div class="title">
                     <h1>Bienvenue à bord</h1>
@@ -63,14 +88,13 @@
             <main>
                 <div class="research-fliter">
                     <p><span class="bold">7</span> résultats</p>
-                    <form action="/">
-                        <select name="Prix croissant" id="address">
-                            <option value="volvo">Prix croissant</option>
-                            <option value="saab">Londre</option>
-                            <option value="opel">Rome</option>
-                            <option value="audi">Berlin</option>
-                        </select>
-                    </form>
+
+                    <select name="Prix croissant" id="prix">
+                        <option value="volvo">Prix croissant</option>
+                        <option value="saab">Londre</option>
+                        <option value="opel">Rome</option>
+                        <option value="audi">Berlin</option>
+                    </select>
                 </div>
                 <div class="items-list">
                     <div class="item">
@@ -127,7 +151,6 @@
                         </div>
                     </div>
                 </div>
-                <div C="slider"></div>
             </main>
             <footer>
                 <img src="./assets/img/agence.jpg" alt="" />
